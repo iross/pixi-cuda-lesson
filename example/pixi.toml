@@ -1,0 +1,16 @@
+[workspace]
+authors = ["Ian Ross <ian.ackerman.ross@gmail.com>"]
+channels = ["conda-forge"]
+name = "example"
+platforms = ["osx-arm64", "win-64", "linux-64"]
+version = "0.1.0"
+
+[tasks]
+lab = {cmd = "jupyter-lab", description = "Test test test test"}
+start = { depends-on = [{ task = "lab" }], description = "Let's go" }
+
+[dependencies]
+python = ">=3.13.5,<3.14"
+numpy = ">=2.3.2,<3"
+notebook = ">=7.4.5,<8"
+jupyterlab = ">=4.4.5,<5"
