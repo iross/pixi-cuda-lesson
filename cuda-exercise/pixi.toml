@@ -1,6 +1,6 @@
 [workspace]
 channels = ["conda-forge"]
-name = "cuda-exercise"
+name = "cuda-example"
 platforms = ["linux-64", "osx-arm64", "win-64"]
 version = "0.1.0"
 
